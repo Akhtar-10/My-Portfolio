@@ -1,0 +1,217 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "General Sans";
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+#main {
+  background-color: #000;
+  color: #fff;
+  width: 100%;
+}
+#cursor {
+  width: 11px;
+transition: transform 0.15s ease;
+  height: 11px;
+  background-color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  z-index: 100000000;
+}
+
+.bounding{
+  width: fit-content;
+  overflow: hidden;
+}
+.blocktext{
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+
+}
+.boundingelem{
+  transform: translateY(100%);
+}
+
+#hero {
+  height: 100vh;
+  width: 100%;
+  padding: 0 1.8vw;
+  position: relative;
+}
+#nav {
+  height: 88px;
+  padding: 30px 1.15vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 17px;
+  font-weight: 500;
+}
+#navr {
+  font-size: 16px;
+}
+#heading {
+  margin-top: 40px;
+  width: fit-content;
+  text-transform: uppercase;
+}
+#heading h1 {
+  opacity: 0.65;
+  font-family: "General Sans";
+  font-size: 9vw;
+  line-height: 1;
+  font-weight: 900;
+  letter-spacing: 5.6px;
+  margin-left: 30px;
+}
+#secondh1 {
+  padding-left: 10vw;
+  padding-bottom: 8px;
+}
+#hero h4 {
+  font-size: 15px;
+}
+
+#rightheadings {
+  text-transform: uppercase;
+  margin-top: 8vw;
+  font-size: 15px;
+  letter-spacing: 1px;
+  padding-right: 10px;
+}
+#headend {
+  padding: 0 4vw 0 2vw;
+  width: 100%;
+  display: flex;
+  align-items: top;
+  justify-content: space-between;
+  margin-top: 80px;
+  position: absolute;
+  bottom: 3%;
+}
+#headend a {
+  text-align: left;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: #fff;
+  text-decoration: none;
+}
+#headend #l3 a i {
+  border-radius: 100%;
+  padding: 5px;
+  background-color: #fff;
+  opacity: 0.6;
+  color: #000;
+  margin: 1px;
+  font-size: 15px;
+  font-weight: 600;
+}
+#second {
+  padding: 8rem 12vw 0 3vw;
+}
+
+#second h1 {
+  text-transform: uppercase;
+  font-size: 7vw;
+  opacity: 0.65;
+}
+.elem {
+  padding: 3vw 0;
+  border-top: 1px solid #888;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+.elemlast {
+  border-bottom: 1px solid #888;
+}
+.elem img {
+    opacity: 0;
+    pointer-events: none;
+    height: 140%;
+    z-index: 999;
+    position: absolute;
+    border-radius:8px;
+    transform: translate(-65%, -50%);
+}
+#about {
+  display: flex;
+  padding-left: 36vw;
+  padding-right: 15.5vw;
+  padding-top: 300px;
+}
+
+#aboutimg img {
+  height: 40vh;
+  width: 40vh; /* Same as height to make it a perfect circle */
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid #ddd; /* optional */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* optional */
+  object-position: top;
+}
+
+#abouttext {
+  padding-left: 80px;
+}
+#abouttext a {
+  color: #fff;
+  text-decoration: none;
+  border: 1px solid #fff;
+  padding: 5px 16px;
+  border-radius: 30px;
+}
+#abouttext a:hover {
+  background: #fff;
+  color: #000;
+}
+#abouttext h4 {
+  margin-bottom: 10px;
+  font-weight: 300;
+  opacity: 0.8;
+  text-transform: uppercase;
+  font-size: 13px;
+}
+#abouttext p {
+  margin-bottom: 30px;
+  font-size: 18px;
+  line-height: 27px;
+  font-weight: 400;
+}
+#forgot {
+  text-transform: uppercase;
+  padding: 150px 0 0 3vw;
+}
+#forgot h4 {
+  color: #888;
+  font-size: 13px;
+}
+#forgot h3 {
+  font-size: 16px;
+}
+#footer {
+  padding: 35px 3vw;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 18px;
+  letter-spacing: 1px;
+  margin-top: 100px;
+}
+#footer .fc {
+  display: flex;
+  gap: 50px;
+}
+#fr {
+  text-align: right;
+}
