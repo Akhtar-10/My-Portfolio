@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projects - Muhammad Akhtar</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+    
+    <link rel="stylesheet" href="loco.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="projects.css" />
+</head>
+<body>
+    <div id="scroll-progress"></div>
+    <div id="cursor"></div>
+
+    <!-- MENU OVERLAY -->
+    <div id="menuOverlay" class="menu-overlay">
+      <button class="menu-close" id="menuClose">
+        <i class="ri-close-line"></i>
+      </button>
+      <nav class="menu-nav">
+        <a href="index.html" class="menu-link">
+          <span class="menu-number">01</span>
+          <span class="menu-text">Home</span>
+        </a>
+        <a href="services.html" class="menu-link">
+          <span class="menu-number">02</span>
+          <span class="menu-text">Services</span>
+        </a>
+        <a href="projects.html" class="menu-link active">
+          <span class="menu-number">03</span>
+          <span class="menu-text">Projects</span>
+        </a>
+        <a href="contact.html" class="menu-link">
+          <span class="menu-number">04</span>
+          <span class="menu-text">Contact</span>
+        </a>
+      </nav>
+      <div class="menu-footer">
+        <div class="menu-social">
+          <a href="#"><i class="ri-linkedin-fill"></i></a>
+          <a href="#"><i class="ri-instagram-fill"></i></a>
+          <a href="#"><i class="ri-twitter-x-fill"></i></a>
+          <a href="#"><i class="ri-github-fill"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div id="main" data-scroll-container>
+        <!-- NAV -->
+        <div id="nav">
+          <div id="navl"><a href="index.html" style="color: #fff; text-decoration: none;">Muhammad Akhtar</a></div>
+          <div id="navr" class="menu-trigger">MENU+</div>
+        </div>
+
+        <!-- PROJECTS HERO -->
+        <section class="projects-hero" data-scroll-section>
+            <h1 class="projects-title">Featured Projects</h1>
+            <p class="projects-subtitle">A showcase of my recent work and client projects</p>
+        </section>
+
+        <!-- PROJECTS GRID -->
+        <section class="projects-container" data-scroll-section>
+            <div class="elem">
+              <img src="lucid-motors.webp" alt="Lucid Motors" />
+              <h1>Lucid Motors</h1>
+              <h4>2023</h4>
+            </div>
+            <div class="elem">
+              <img src="baron-capital.webp" alt="Baron Capital" />
+              <h1>Baron Capital</h1>
+              <h4>2023</h4>
+            </div>
+            <div class="elem">
+              <img src="nfl.webp" alt="NFL" />
+              <h1>NFL</h1>
+              <h4>2023</h4>
+            </div>
+            <div class="elem">
+              <img src="placenew.webp" alt="Placenew" />
+              <h1>Placenew</h1>
+              <h4>2023</h4>
+            </div>
+            <div class="elem">
+              <img src="somos.webp" alt="Somos" />
+              <h1>Somos</h1>
+              <h4>2023</h4>
+            </div>
+            <!-- More Projects -->
+            <div class="elem">
+              <img src="lucid-motors.webp" alt="E-commerce Platform" />
+              <h1>E-commerce Platform</h1>
+              <h4>2024</h4>
+            </div>
+            <div class="elem">
+              <img src="baron-capital.webp" alt="Portfolio Website" />
+              <h1>Portfolio Website</h1>
+              <h4>2024</h4>
+            </div>
+            <div class="elem elemlast">
+              <img src="nfl.webp" alt="Dashboard App" />
+              <h1>Dashboard App</h1>
+              <h4>2024</h4>
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="projects-cta" data-scroll-section>
+            <h2>Have a Project in Mind?</h2>
+            <p>Let's collaborate and bring your ideas to life</p>
+            <a href="contact.html" class="cta-button">Start a Project</a>
+        </section>
+
+        <!-- FOOTER -->
+        <div id="footer" data-scroll-section>
+          <div id="fl" class="fc">
+            <h5>&copy; 2025</h5>
+            <h5 id="time"></h5>
+          </div>
+          <div id="fr" class="fc">
+            <h5>Linkedin</h5>
+            <h5>Instagram</h5>
+            <h5>X/twitter</h5>
+            <h5>Youtube</h5>
+          </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

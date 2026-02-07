@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact - Muhammad Akhtar</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+    
+    <link rel="stylesheet" href="loco.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="contact.css" />
+</head>
+<body>
+    <div id="scroll-progress"></div>
+    <div id="cursor"></div>
+
+    <!-- MENU OVERLAY -->
+    <div id="menuOverlay" class="menu-overlay">
+      <button class="menu-close" id="menuClose">
+        <i class="ri-close-line"></i>
+      </button>
+      <nav class="menu-nav">
+        <a href="index.html" class="menu-link">
+          <span class="menu-number">01</span>
+          <span class="menu-text">Home</span>
+        </a>
+        <a href="services.html" class="menu-link">
+          <span class="menu-number">02</span>
+          <span class="menu-text">Services</span>
+        </a>
+        <a href="projects.html" class="menu-link">
+          <span class="menu-number">03</span>
+          <span class="menu-text">Projects</span>
+        </a>
+        <a href="contact.html" class="menu-link active">
+          <span class="menu-number">04</span>
+          <span class="menu-text">Contact</span>
+        </a>
+      </nav>
+      <div class="menu-footer">
+        <div class="menu-social">
+          <a href="#"><i class="ri-linkedin-fill"></i></a>
+          <a href="#"><i class="ri-instagram-fill"></i></a>
+          <a href="#"><i class="ri-twitter-x-fill"></i></a>
+          <a href="#"><i class="ri-github-fill"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div id="main" data-scroll-container>
+        <!-- NAV -->
+        <div id="nav">
+          <div id="navl"><a href="index.html" style="color: #fff; text-decoration: none;">Muhammad Akhtar</a></div>
+          <div id="navr" class="menu-trigger">MENU+</div>
+        </div>
+
+        <!-- CONTACT HERO -->
+        <section class="contact-hero" data-scroll-section>
+            <h1 class="contact-title">Let's Work Together</h1>
+            <p class="contact-subtitle">Have a project in mind? I'd love to hear about it.</p>
+        </section>
+
+        <!-- CONTACT CONTENT -->
+        <section class="contact-container" data-scroll-section>
+            <div class="contact-grid">
+                <!-- Contact Info -->
+                <div class="contact-info ">
+                    <h2>Get in Touch</h2>
+                    <p>I'm available for freelance work and full-time opportunities. Let's create something amazing together.</p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="ri-mail-line"></i>
+                            <div>
+                                <h4>Email</h4>
+                                <a href="mailto:your@email.com">your@email.com</a>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <i class="ri-phone-line"></i>
+                            <div>
+                                <h4>Phone</h4>
+                                <a href="tel:+923001234567">+92 300 1234567</a>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <i class="ri-map-pin-line"></i>
+                            <div>
+                                <h4>Location</h4>
+                                <p>Karachi, Pakistan</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-social">
+                        <h4>Follow Me</h4>
+                        <div class="social-links">
+                            <a href="#"><i class="ri-linkedin-fill"></i></a>
+                            <a href="#"><i class="ri-instagram-fill"></i></a>
+                            <a href="#"><i class="ri-twitter-x-fill"></i></a>
+                            <a href="#"><i class="ri-github-fill"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="contact-form-wrapper ">
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="contactName">Name</label>
+                                <input type="text" id="contactName" name="name" required />
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="contactEmail">Email</label>
+                                <input type="email" id="contactEmail" name="email" required />
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="contactSubject">Subject</label>
+                            <input type="text" id="contactSubject" name="subject" required />
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="contactMessage">Message</label>
+                            <textarea id="contactMessage" name="message" rows="6" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="contact-submit">
+                            Send Message
+                            <i class="ri-arrow-right-line"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- FOOTER -->
+        <div id="footer" data-scroll-section>
+          <div id="fl" class="fc">
+            <h5>&copy; 2025</h5>
+            <h5 id="time"></h5>
+          </div>
+          <div id="fr" class="fc">
+            <h5>Linkedin</h5>
+            <h5>Instagram</h5>
+            <h5>X/twitter</h5>
+            <h5>Youtube</h5>
+          </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script>
+    <script src="script.js"></script>
+    <script src="contact.js"></script>
+</body>
+</html>

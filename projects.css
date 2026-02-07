@@ -1,0 +1,84 @@
+/* ========== PROJECTS PAGE ========== */
+
+/* Projects Hero */
+.projects-hero {
+  min-height: 60vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 150px 3vw 100px 3vw;
+}
+
+.projects-title {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 8vw;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin-bottom: 20px;
+  opacity: 0;
+  animation: fadeInUp 1s ease forwards;
+}
+
+.projects-subtitle {
+  font-family: 'Inter', sans-serif;
+  font-size: 20px;
+  opacity: 0.7;
+  max-width: 600px;
+  animation: fadeInUp 1s ease 0.2s forwards;
+  opacity: 0;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Projects Container */
+.projects-container {
+  padding: 50px 12vw 0 3vw;
+}
+
+/* Projects use same .elem styling from main style.css */
+
+/* Projects CTA */
+.projects-cta {
+  text-align: center;
+  padding: 150px 3vw;
+}
+
+.projects-cta h2 {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.projects-cta p {
+  font-family: 'Inter', sans-serif;
+  font-size: 18px;
+  opacity: 0.7;
+  margin-bottom: 40px;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .projects-title {
+    font-size: 12vw;
+  }
+  
+  .projects-container {
+    padding: 30px 6vw 0 3vw;
+  }
+  
+  .projects-cta h2 {
+    font-size: 32px;
+  }
+}

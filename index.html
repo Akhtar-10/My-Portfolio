@@ -3,21 +3,114 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="style.css" />
+    <title>Muhammad Akhtar - Portfolio</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+    
     <link rel="stylesheet" href="loco.css" />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <div id="page-loader">
+      <div class="loader-text">MUHAMMAD AKHTAR</div>
+      <div class="loader-bar">
+        <div class="loader-progress"></div>
+      </div>
+    </div>
+
+    <div id="scroll-progress"></div>
     <div id="cursor"></div>
-    <div id="main">
-      <div id="hero">
+    
+    <div id="quotePopup" class="popup-overlay">
+      <div class="popup-container">
+        <div class="popup-header">
+          <h2>Get a Quote</h2>
+          <button class="close-btn" id="closePopup">
+            <i class="ri-close-line"></i>
+          </button>
+        </div>
+        <form id="quoteForm" class="quote-form">
+          <div class="form-group">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" placeholder="Muhammad Akhtar" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="your@email.com" required />
+          </div>
+          <div class="form-group">
+            <label for="projectType">Project Type</label>
+            <select id="projectType" name="projectType" required>
+              <option value="">Select project type</option>
+              <option value="website">Website Development</option>
+              <option value="ecommerce">E-commerce Store</option>
+              <option value="webapp">Web Application</option>
+              <option value="wordpress">WordPress Site</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="budget">Budget Range</label>
+            <select id="budget" name="budget" required>
+              <option value="">Select budget</option>
+              <option value="5k-10k">$5,000 - $10,000</option>
+              <option value="10k-25k">$10,000 - $25,000</option>
+              <option value="25k-50k">$25,000 - $50,000</option>
+              <option value="50k+">$50,000+</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message">Project Details</label>
+            <textarea id="message" name="message" rows="4" placeholder="Tell me about your project..." required></textarea>
+          </div>
+          <button type="submit" class="submit-btn">
+            Send Quote Request 
+            <i class="ri-arrow-right-up-line"></i>
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <div id="menuOverlay" class="menu-overlay">
+      <button class="menu-close" id="menuClose">
+        <i class="ri-close-line"></i>
+      </button>
+      <nav class="menu-nav">
+        <a href="index.html" class="menu-link">
+          <span class="menu-number">01</span>
+          <span class="menu-text">Home</span>
+        </a>
+        <a href="services.html" class="menu-link">
+          <span class="menu-number">02</span>
+          <span class="menu-text">Services</span>
+        </a>
+        <a href="projects.html" class="menu-link">
+          <span class="menu-number">03</span>
+          <span class="menu-text">Projects</span>
+        </a>
+        <a href="contact.html" class="menu-link">
+          <span class="menu-number">04</span>
+          <span class="menu-text">Contact</span>
+        </a>
+      </nav>
+      <div class="menu-footer">
+        <div class="menu-social">
+          <a href="#"><i class="ri-linkedin-fill"></i></a>
+          <a href="#"><i class="ri-instagram-fill"></i></a>
+          <a href="#"><i class="ri-twitter-x-fill"></i></a>
+          <a href="#"><i class="ri-github-fill"></i></a>
+        </div>
+      </div>
+    </div>
+    
+    <div id="main" data-scroll-container>
+      <div id="hero" data-scroll-section>
         <div id="nav">
           <div id="navl">Muhammad Akhtar</div>
-          <div id="navr">MENU+</div>
+          <div id="navr" class="menu-trigger">MENU+</div>
         </div>
         <div id="heading">
           <div class="bounding">
@@ -37,91 +130,90 @@
             <h4 class="boundingelem">Available for Full Time & Freelance</h4>
           </div>
           <div class="bounding">
-            <h4 class="boundingelem">work from feb ‘25</h4>
+            <h4 class="boundingelem">work from feb '25</h4>
           </div>
         </div>
         <div id="headend">
           <div id="l1">
             <a href="#"
-              >Currently Working at &nbsp; <i class="ri-arrow-right-up-line"></i
-              ><br />
-              Navixt Digital Agency</a
-            >
+              >Currently Working at Navixt Digital Agency <i class="ri-arrow-right-up-line"></i>
+            </a>
           </div>
           <div id="l2">
-            <a href="#"
+            <a href="#" id="getQuoteBtn"
               >get a quote &nbsp; <i class="ri-arrow-right-up-line"></i
-            ></a>
-          </div>
-          <div id="l3">
-            <a href="#"
-              ><i class="ri-arrow-down-line"></i
-              ><i class="ri-arrow-down-line"></i
             ></a>
           </div>
         </div>
       </div>
-      <div id="second">
-        <div class ="elem">
-          <img src="lucid-motors.webp" alt="" />
+      
+      <!-- ✅ REVEAL CLASSES REMOVED -->
+      <div id="second" data-scroll-section>
+        <h1>Selected Work</h1>
+        <div class="elem">
+          <img src="lucid-motors.webp" alt="Lucid Motors" />
           <h1>Lucid Motors</h1>
           <h4>2023</h4>
         </div>
-        <div class ="elem">
-          <img src="baron-capital.webp" alt="" />
+        <div class="elem">
+          <img src="baron-capital.webp" alt="Baron Capital" />
           <h1>Baron capital</h1>
           <h4>2023</h4>
         </div>
-        <div class ="elem">
-          <img src="nfl.webp" alt="" />
+        <div class="elem">
+          <img src="nfl.webp" alt="NFL" />
           <h1>nfl</h1>
           <h4>2023</h4>
         </div>
-        <div class ="elem">
-          <img src="placenew.webp" alt="" />
+        <div class="elem">
+          <img src="placenew.webp" alt="Placenew" />
           <h1>placenew</h1>
           <h4>2023</h4>
         </div>
-        <div class ="elem elemlast">
-          <img src="somos.webp" alt="" />
+        <div class="elem elemlast">
+          <img src="somos.webp" alt="Somos" />
           <h1>somos</h1>
           <h4>2023</h4>
         </div>
       </div>
-      <div id="about">
+      
+      <!-- ✅ REVEAL CLASSES REMOVED -->
+      <div id="about" data-scroll-section>
         <div id="aboutimg">
-          <img src="WhatsApp Image 2024-12-28 at 4.52.13 PM.jpeg" alt="" />
+          <img src="myimg.jpeg" alt="Muhammad Akhtar" />
         </div>
         <div id="abouttext">
           <h4>(About Me)</h4>
           <p>
            I'm a web developer who builds things that not only look good but also work smoothly and solve real problems. I specialize in the MERN stack and also work with WordPress and Bootstrap to create clean, fast, and responsive designs. My logic? Keep it clean, make it reliable, and never forget the user. I'm the developer you want if you want users to say, "This just works perfectly!"
-
-
           </p>
-          <a href="#">Let's talk</a>
+          <a href="#" id="letsTalkBtn">Let's talk</a>
         </div>
       </div>
-      <div id="forgot">
+      
+      <!-- ✅ REVEAL CLASSES REMOVED -->
+      <div id="forgot" data-scroll-section>
         <h4>oops, almost forgot...</h4>
         <h3>
        follow me on instagram &nbsp;
           <i class="ri-arrow-right-up-line"></i>
         </h3>
       </div>
-      <div id="footer">
+      
+      <div id="footer" data-scroll-section>
         <div id="fl" class="fc">
           <h5>&copy; 2025</h5>
           <h5 id="time"></h5>
         </div>
         <div id="fr" class="fc">
           <h5>Linkedin</h5>
-          <h5>INstagram</h5>
+          <h5>Instagram</h5>
           <h5>X/twitter</h5>
-          <h5>Youtube</h5>
+          <h5>Github</h5>
         </div>
       </div>
     </div>
+    
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"
       integrity="sha512-NcZdtrT77bJr4STcmsGAESr06BYGE8woZdSdEgqnpyqac7sugNO+Tr4bGwGF3MsnEkGKhU2KL2xh6Ec+BqsaHA=="
