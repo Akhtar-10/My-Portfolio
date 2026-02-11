@@ -4,6 +4,11 @@ window.addEventListener('load', () => {
   if (loader) {
     setTimeout(() => {
       loader.classList.add('hidden');
+      
+      // Loader hide hone k baad hero animation start karo
+      if (document.getElementById('hero')) {
+        firstPageAnm();
+      }
     }, 2000);
   }
 });
@@ -142,15 +147,15 @@ if (document.getElementById('hero')) {
     tl.from("#nav", {
       y: "-10",
       opacity: 0,
-      duration: 1.5,
+      duration: 0.8,
       ease: Expo.easeInOut,
     });
     
     tl.to(".boundingelem", {
       y: 0,
       stagger: 0.25,
-      duration: 1.5,
-      delay: 0.5,
+      duration: 1.8,
+      delay: 0,
       ease: Expo.easeInOut,
     });
     
@@ -162,7 +167,6 @@ if (document.getElementById('hero')) {
       ease: Expo.easeInOut,
     });
   }
-  firstPageAnm();
 }
 
 // ========== PROJECT HOVER EFFECT ========== 

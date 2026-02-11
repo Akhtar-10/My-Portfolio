@@ -256,7 +256,7 @@ body {
   background: linear-gradient(90deg, #fff, #888);
   z-index: 99999;
   transform-origin: left;
-  width: 100%; /* ✅ YE ADD KARO */
+  width: 100%; 
   transform: scaleX(0);
   transition: transform 0.1s ease;
 }
@@ -310,14 +310,14 @@ body {
   position: relative;
 }
 
-/* ========== PREMIUM NAVBAR ========== */
+/* ========== NAVBAR ========== */
 #nav {
   height: 88px;
   padding: 30px 1.15vw;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  font-size: 17px;
+  font-size: 19px;
   font-weight: 500;
   font-family: 'JetBrains Mono', monospace;
   position: relative;
@@ -358,8 +358,7 @@ body {
   font-family: 'JetBrains Mono', monospace;
   font-size: 9vw;
   line-height: 1;
-  font-weight: 900;
-  letter-spacing: 5.6px;
+  font-weight: 700;
   margin-left: 30px;
 }
 
@@ -367,7 +366,9 @@ body {
   padding-left: 10vw;
   padding-bottom: 8px;
 }
-
+.quote-btn{
+  display: none;
+}
 #hero h4 {
   font-size: 15px;
   font-family: 'Inter', sans-serif;
@@ -388,7 +389,7 @@ body {
   padding: 0 4vw 0 2vw;
   width: 100%;
   display: flex;
-  align-items: top;
+  align-items: center;
   justify-content: space-between;
   margin-top: 80px;
   position: absolute;
@@ -417,12 +418,14 @@ body {
 
 #second h1 {
   text-transform: uppercase;
-  font-size: 7vw;
+  font-size: 6vw;
   opacity: 0.65;
   font-family: 'JetBrains Mono', monospace;
-  margin-bottom: 2rem;
+  margin-bottom: 0rem;
 }
-
+#main-head{
+  padding-bottom: 3vw;
+}
 /* ========== PREMIUM PROJECT CARDS ========== */
 .elem {
   padding: 3vw 0;
@@ -490,6 +493,8 @@ body {
 /* ========== PREMIUM ABOUT IMAGE ========== */
 #aboutimg {
   position: relative;
+   width: fit-content;
+  margin: 0 auto;
 }
 
 #aboutimg::before {
@@ -518,6 +523,7 @@ body {
   box-shadow: 0 10px 40px rgba(255, 255, 255, 0.2);
   object-position: top;
   transition: all 0.4s ease;
+  display: block;
 }
 
 #aboutimg img:hover {
@@ -621,10 +627,10 @@ body {
   letter-spacing: 1px;
   margin-top: 100px;
   font-family: 'JetBrains Mono', monospace;
-  width: 100%; /* ✅ YE ADD KARO */
-  background: #000; /* ✅ YE ADD KARO */
-  position: relative; /* ✅ YE ADD KARO */
-  z-index: 10; /* ✅ YE ADD KARO */
+  width: 100%; 
+  background: #000; 
+  position: relative; 
+  z-index: 10; 
   border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
@@ -661,6 +667,9 @@ body {
 
 #fr {
   text-align: right;
+}
+#mob-fr{
+  display: none;
 }
 
 /* ========== POPUP STYLES ========== */
@@ -845,6 +854,8 @@ body {
 
 /* ========== MOBILE RESPONSIVE ========== */
 @media (max-width: 768px) {
+
+  /* POPUP */
   .popup-container {
     padding: 30px 20px;
     width: 95%;
@@ -866,6 +877,7 @@ body {
     font-size: 14px;
   }
 
+  /* FIXED BUTTON */
   .fixed-scroll-btn {
     bottom: 20px;
     right: 20px;
@@ -877,14 +889,118 @@ body {
     font-size: 20px;
   }
 
-  #heading h1 {
-    font-size: 12vw;
+  /* NAVBAR */
+  #nav {
+    padding: 30px 15px;
+    font-size: 15px;
   }
 
+  #navr {
+    font-size: 15px;
+  }
+
+  /* HEADING */
+  #heading {
+    margin-top: 80px;
+    width: fit-content;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  #heading h1 {
+    font-size: 14vw;
+  }
+
+  #secondh1 {
+    padding-left: 0vw;
+    padding-bottom: 8px;
+  }
+
+  #hero h4 {
+    font-size: 13px;
+  }
+
+  #rightheadings {
+    margin-top: 60px;
+  }
+
+  /* HEAD END */
+  #headend {
+    padding: 0 4vw 0 2vw;
+    width: 100%;
+    display: flex;
+    align-items: top;
+    justify-content: center;
+    margin-top: 80px;
+    position: absolute;
+    bottom: 3%;
+    font-size: 14px;
+  }
+
+  #headend a {
+    text-align: left;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Inter', sans-serif;
+    transition: all 0.3s ease;
+  }
+
+  #headend a:hover {
+    opacity: 1;
+    letter-spacing: 1px;
+  }
+
+  #l2 {
+    display: none;
+  }
+
+  /* SECOND SECTION */
   #second {
     padding: 6rem 6vw 0 3vw;
   }
 
+  #main-head {
+    margin-bottom: 3vw;
+  }
+
+  #second h1 {
+    font-size: 8vw;
+  }
+  
+  .quote-btn {
+    display: none;
+    background: #fff;
+    color: #000;
+    border: none;
+    padding: 14px 25px;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-radius: 30px;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    transition: all 0.3s ease;
+    margin-top: 50px;
+    font-family: 'Inter', sans-serif;
+  }
+
+  .quote-btn:hover {
+    background: #000;
+    color: #fff;
+    border: 1px solid #fff;
+    transform: translateY(-2px);
+  }
+
+  .quote-btn i {
+    font-size: 18px;
+  }
+  
+  /* ABOUT */
   #about {
     flex-direction: column;
     padding: 100px 3vw;
@@ -899,4 +1015,93 @@ body {
     height: 30vh;
     width: 30vh;
   }
+
+  /* PROJECT CARDS */
+  .elem h4 {
+    font-size: 3vw;
+  }
+  
+  #aboutimg {
+    width: fit-content;
+    margin: 0 auto;
+  }
+  
+  #aboutimg::before {
+    top: -8px;
+    left: -8px;
+    right: -8px;
+    bottom: -8px;
+  }
+  
+  #aboutimg img {
+    height: 250px;
+    width: 250px;
+  }
+  
+  #forgot {
+    text-transform: uppercase;
+    padding: 0 0 0 3vw;
+  }
+  /* ========== PREMIUM FOOTER ========== */
+#footer {
+  padding: 10px 0vw;
+  margin: 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
+.fc{
+  padding: 10px 3vw;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 18px;
+  width: 100%; 
+}
+#footer .fc {
+  display: flex;
+  gap: 50px; 
+}
+#footer #fr{
+  display: none;
+}
+
+#mob-fr{
+  display: flex;
+  padding:100px 3vw 30px 3vw;
+}
+}
+
+/* ========== 600px BREAKPOINT ========== */
+@media (max-width: 600px) {
+  #aboutimg img {
+    height: 220px;
+    width: 220px;
+  }
+  
+  #aboutimg::before {
+    top: -7px;
+    left: -7px;
+    right: -7px;
+    bottom: -7px;
+  }
+} /* ✅ 600px MEDIA QUERY CLOSE */
+
+/* ========== 375px BREAKPOINT ========== */
+@media (max-width: 375px) {
+  #aboutimg img {
+    height: 200px;
+    width: 200px;
+  }
+  
+  #aboutimg::before {
+    top: -6px;
+    left: -6px;
+    right: -6px;
+    bottom: -6px;
+    border-width: 1.5px; 
+  }
+  
+  #forgot {
+    padding: 80px 0 0 3vw;
+  }
+} /* ✅ 375px MEDIA QUERY CLOSE */
