@@ -219,6 +219,7 @@ body {
   font-family: 'JetBrains Mono', monospace;
   font-size: 24px;
   letter-spacing: 3px;
+  color: #fff;
   animation: pulse 1.5s ease-in-out infinite;
 }
 
@@ -270,7 +271,7 @@ body {
   position: fixed;
   pointer-events: none;
   z-index: 100000000;
-  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 0.1s cubic-bezier(0.4, 0, 0.2, 1);
   mix-blend-mode: difference;
 }
 
@@ -553,7 +554,7 @@ body {
   font-family: 'Inter', sans-serif;
 }
 
-/* ========== LET'S TALK BUTTON - PREMIUM ========== */
+/* ========== LET'S TALK BUTTON ========== */
 #abouttext a {
   color: #fff;
   text-decoration: none;
